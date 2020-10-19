@@ -38,3 +38,19 @@ Then open PowerShell in Windows, and launch the docker container.
 
 docker run -v ${PWD}:/home/jovyan -p 8888:8888 picksc/jupyterpic
 
+## Running notebooks under Linux (tested via ubuntu 20.04):
+
+JupyterPIC has been recently ported to Linux using docker.  To run JupyterPIC, install docker via the apt command:
+
+sudo apt install docker.io
+
+(an optional step to verify the installation is)
+
+sudo docker run hello-world
+
+To run JupyterPIC, simply download the package, and from the JupyterPIC directory, type:
+
+sudo ./runosdocker
+
+And it will launch the JupyterPIC environment.
+
